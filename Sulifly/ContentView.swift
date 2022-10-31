@@ -6,16 +6,37 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    
+    @State var isloggedin = false
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if(isloggedin)
+            {
+                StartView()
+            } else {
+                LoginView()
+            }
+        }.onAppear() {
+            var handle = Auth.auth().addStateDidChangeListener { auth, user in
+                
+                if(Auth.auth().currentUser == nil)
+                {
+                    isloggedin = false
+                } else {
+                    isloggedin = true
+                }
+            }
         }
-        .padding()
+        
+        
+        
+        
+        
     }
 }
 

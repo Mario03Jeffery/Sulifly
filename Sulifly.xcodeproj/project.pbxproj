@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6964EDA62906858F0089B4A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6964EDA52906858E0089B4A0 /* GoogleService-Info.plist */; };
+		6964EDB42906C0330089B4A0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6964EDB32906C0330089B4A0 /* FirebaseAnalytics */; };
+		6964EDB62906C0330089B4A0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6964EDB52906C0330089B4A0 /* FirebaseAnalyticsSwift */; };
+		6964EDB82906C0330089B4A0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6964EDB72906C0330089B4A0 /* FirebaseAuth */; };
+		6964EDBA2906C0330089B4A0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6964EDB92906C0330089B4A0 /* FirebaseDatabase */; };
+		6964EDBC2906C0330089B4A0 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6964EDBB2906C0330089B4A0 /* FirebaseDatabaseSwift */; };
+		69669BA1290884D3001B4B27 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69669BA0290884D3001B4B27 /* LoginView.swift */; };
+		697C1482290A7D7B00B15CA3 /* Sulifly3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C1481290A7D7A00B15CA3 /* Sulifly3View.swift */; };
+		697C1484290A9D7600B15CA3 /* delete and save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C1483290A9D7600B15CA3 /* delete and save.swift */; };
+		697C1486290AB11400B15CA3 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C1485290AB11400B15CA3 /* StartView.swift */; };
 		69B2320728FC7B88007F14FF /* SuliflyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2320628FC7B88007F14FF /* SuliflyApp.swift */; };
 		69B2320928FC7B88007F14FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2320828FC7B88007F14FF /* ContentView.swift */; };
 		69B2320B28FC7B8B007F14FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B2320A28FC7B8B007F14FF /* Assets.xcassets */; };
 		69B2320E28FC7B8B007F14FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B2320D28FC7B8B007F14FF /* Preview Assets.xcassets */; };
+		69C5184628FD70E500EF791F /* Sulifly2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5184528FD70E500EF791F /* Sulifly2View.swift */; };
+		69C5184828FD74EC00EF791F /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5184728FD74EC00EF791F /* buttonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6964EDA52906858E0089B4A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69669BA0290884D3001B4B27 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		697C1481290A7D7A00B15CA3 /* Sulifly3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sulifly3View.swift; sourceTree = "<group>"; };
+		697C1483290A9D7600B15CA3 /* delete and save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "delete and save.swift"; sourceTree = "<group>"; };
+		697C1485290AB11400B15CA3 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		69B2320328FC7B88007F14FF /* Sulifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sulifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B2320628FC7B88007F14FF /* SuliflyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuliflyApp.swift; sourceTree = "<group>"; };
 		69B2320828FC7B88007F14FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69B2320A28FC7B8B007F14FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B2320D28FC7B8B007F14FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69C5184528FD70E500EF791F /* Sulifly2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sulifly2View.swift; sourceTree = "<group>"; };
+		69C5184728FD74EC00EF791F /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6964EDBC2906C0330089B4A0 /* FirebaseDatabaseSwift in Frameworks */,
+				6964EDB62906C0330089B4A0 /* FirebaseAnalyticsSwift in Frameworks */,
+				6964EDB82906C0330089B4A0 /* FirebaseAuth in Frameworks */,
+				6964EDBA2906C0330089B4A0 /* FirebaseDatabase in Frameworks */,
+				6964EDB42906C0330089B4A0 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +75,15 @@
 		69B2320528FC7B88007F14FF /* Sulifly */ = {
 			isa = PBXGroup;
 			children = (
+				6964EDA52906858E0089B4A0 /* GoogleService-Info.plist */,
 				69B2320628FC7B88007F14FF /* SuliflyApp.swift */,
 				69B2320828FC7B88007F14FF /* ContentView.swift */,
+				697C1481290A7D7A00B15CA3 /* Sulifly3View.swift */,
+				69C5184528FD70E500EF791F /* Sulifly2View.swift */,
+				69669BA0290884D3001B4B27 /* LoginView.swift */,
+				697C1485290AB11400B15CA3 /* StartView.swift */,
+				69C5184728FD74EC00EF791F /* buttonView.swift */,
+				697C1483290A9D7600B15CA3 /* delete and save.swift */,
 				69B2320A28FC7B8B007F14FF /* Assets.xcassets */,
 				69B2320C28FC7B8B007F14FF /* Preview Content */,
 			);
@@ -83,6 +114,13 @@
 			dependencies = (
 			);
 			name = Sulifly;
+			packageProductDependencies = (
+				6964EDB32906C0330089B4A0 /* FirebaseAnalytics */,
+				6964EDB52906C0330089B4A0 /* FirebaseAnalyticsSwift */,
+				6964EDB72906C0330089B4A0 /* FirebaseAuth */,
+				6964EDB92906C0330089B4A0 /* FirebaseDatabase */,
+				6964EDBB2906C0330089B4A0 /* FirebaseDatabaseSwift */,
+			);
 			productName = Sulifly;
 			productReference = 69B2320328FC7B88007F14FF /* Sulifly.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 69B231FA28FC7B88007F14FF;
+			packageReferences = (
+				6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 69B2320428FC7B88007F14FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +168,7 @@
 			files = (
 				69B2320E28FC7B8B007F14FF /* Preview Assets.xcassets in Resources */,
 				69B2320B28FC7B8B007F14FF /* Assets.xcassets in Resources */,
+				6964EDA62906858F0089B4A0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C5184628FD70E500EF791F /* Sulifly2View.swift in Sources */,
+				697C1482290A7D7B00B15CA3 /* Sulifly3View.swift in Sources */,
+				697C1484290A9D7600B15CA3 /* delete and save.swift in Sources */,
+				697C1486290AB11400B15CA3 /* StartView.swift in Sources */,
 				69B2320928FC7B88007F14FF /* ContentView.swift in Sources */,
+				69C5184828FD74EC00EF791F /* buttonView.swift in Sources */,
+				69669BA1290884D3001B4B27 /* LoginView.swift in Sources */,
 				69B2320728FC7B88007F14FF /* SuliflyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +387,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6964EDB32906C0330089B4A0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6964EDB52906C0330089B4A0 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		6964EDB72906C0330089B4A0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6964EDB92906C0330089B4A0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6964EDBB2906C0330089B4A0 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6964EDB22906C0330089B4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69B231FB28FC7B88007F14FF /* Project object */;
 }
