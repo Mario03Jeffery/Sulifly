@@ -11,6 +11,7 @@ import Firebase
 struct ContentView: View {
     
     @State var isloggedin = false
+    @State var some = ""
     
     var body: some View {
         
