@@ -16,68 +16,82 @@ struct Sulifly3View: View {
     Database.database().reference()
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Text("Name")
-                TextField("Name", text: $userCreate)
-                    .fontWeight(.bold)
-                    .frame(width: 200)
-                    .cornerRadius(10.0
-                                  
-                    )
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    .padding(.trailing)
-                
-            }
+           
+        ZStack {
+          
+            Image("Aboki")
+                .resizable()
+                .scaledToFill()
+                .opacity(1.40)
+                .ignoresSafeArea()
             
-            HStack {
-                Spacer()
-                Text("Email")
-                TextField("Email", text: $useremail)
-                    .fontWeight(.bold)
-                    .frame(width: 200)
-                    .cornerRadius(10.0
-                                  
-                    )
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    .padding(.trailing)
+            
+            
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    TextField("Name", text: $userCreate)
+                        .fontWeight(.bold)
+                        .frame(width: 200)
+                        .cornerRadius(10.0)
+                        .padding()
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing)
+                        .padding(.all)
+                }
                 
-            }
-            .keyboardType(.emailAddress)
-            HStack {
-                Spacer()
-                Text("Password")
-                SecureField("Password", text: $userpassword)
-                    .fontWeight(.bold)
-                    .frame(width: 200)
-                    .cornerRadius(10.0
-                                  
-                    )
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    .padding(.trailing)
+                HStack {
+                    Spacer()
+                    TextField("Email", text: $useremail)
+                        .fontWeight(.bold)
+                        .frame(width: 200)
+                        .cornerRadius(10.0)
+                        .padding()
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing)
+                        .padding(.all)
+                }
+                .keyboardType(.emailAddress)
+                HStack {
+                    Spacer()
+               SecureField("Password", text: $userpassword)
+                        .fontWeight(.bold)
+                        .frame(width: 200)
+                        .cornerRadius(10.0)
+                        .padding()
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing)
+                        .padding(.all)
+                    
+                }
+                Button(action: {
+                    enteruser()
+                }, label: {
+                    Text("Create account")
+                        .fontWeight(.bold)
+                    
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 200.0)
+                })
                 
-            }
-            Button(action: {
-                enteruser()
-            }, label: {
-                Text("Create account")
-                    .fontWeight(.bold)
                 
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 100.0)
-            })
+                
+            
             
             
             
         }
+        
+            
+        }
+            
+        
+        
         
         
         

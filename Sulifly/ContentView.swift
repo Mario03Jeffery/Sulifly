@@ -18,10 +18,13 @@ struct ContentView: View {
         VStack {
             if(isloggedin)
             {
-                StartView()
+                TabView2()
             } else {
                 LoginView()
             }
+            
+        
+            
         }.onAppear() {
             var handle = Auth.auth().addStateDidChangeListener { auth, user in
                 

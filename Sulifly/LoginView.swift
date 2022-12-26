@@ -11,51 +11,57 @@ struct LoginView: View {
     var body: some View {
         
         NavigationView(content: {
-            
-            VStack {
-                Text("SULIFLY")
-                    .padding(.top, 100.0)
-                    .font(.largeTitle)
-                    .underline()
-                    .shadow(color: .black, radius: 10, x: 5, y: 6)
-                    .rotation3DEffect(.degrees(35), axis: (x: 1, y: 0, z: 0))
+            ZStack{
+                Image("StartImage")
+                    .resizable()
+                    .scaledToFill()
+                    .opacity(1.40)
+                    .ignoresSafeArea()
                 
-                
-                Text("COPENHAGEN")
-                    .font(.largeTitle)
-                    .underline()
-                    .shadow(color: .blue, radius: 5, x: 0, y: 5)
-                    .rotation3DEffect(.degrees(35), axis: (x: 1, y: 0, z: 0))
-                
-                
-                Text("see the world from a different angle")
-                    .padding()
-                
-                
-                
-                NavigationLink(destination: {Sulifly2View()}, label: {
-                    Text("Sign in")
-                    
+                VStack {
+                    Text("SULIFLY")
                         .padding(.top, 100.0)
-                        .frame(width: 100.0, height: 100)
+                        .font(.largeTitle)
+                        .underline()
+                        .rotation3DEffect(.degrees(5), axis: (x: 1, y: 0, z: 0))
                     
                     
-                })
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
-                NavigationLink(destination: {
-                    Sulifly3View()
-                }, label: {
-                    Text("Get Started")
+                    Text("COPENHAGEN")
+                        .font(.largeTitle)
+                        .underline()
+                        .rotation3DEffect(.degrees(5), axis: (x: 1, y: 0, z: 0))
                     
                     
+                    Text("see the world from a different angle")
+                        .underline()
+                        .padding()
                     
+                    Spacer()
                     
-                })
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .onAppear()
+                    NavigationLink(destination: {Sulifly2View()}, label: {
+                        Text("Sign in")
+                            .padding(.top, 100.0)
+                            .frame(width: 100.0, height: 100)
+                        
+                        
+                    })
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    
+                    NavigationLink(destination: {
+                        Sulifly3View()
+                    }, label: {
+                        Text("Get Started")
+                            
+                        
+                        
+                    })
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .onAppear()
+                    
+                }
                 
             }
+           
         })
         
         

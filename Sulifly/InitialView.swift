@@ -1,17 +1,17 @@
 //
-//  StartView.swift
+//  InitialView.swift
 //  Sulifly
 //
-//  Created by Mario Ehiagwina on 2022-10-27.
+//  Created by Mario Ehiagwina on 2022-11-03.
 //
 
 import SwiftUI
 import Firebase
-struct StartView: View {
+struct InitialView: View {
     var ref: DatabaseReference! =
     Database.database().reference()
     var body: some View {
-        
+       
         VStack{
             
             Button(action: {
@@ -25,16 +25,15 @@ struct StartView: View {
             
             
         }
-            
-            
-            
-        }
+        
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(hue: 0.573, saturation: 0.139, brightness: 0.958))
         
     }
-    
-    struct StartView_Previews: PreviewProvider {
-        static var previews: some View {
-            StartView()
-        }
-    }
+}
 
+struct InitialView_Previews: PreviewProvider {
+    static var previews: some View {
+        InitialView()
+    }
+}

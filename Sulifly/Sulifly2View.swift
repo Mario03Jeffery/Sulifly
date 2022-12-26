@@ -14,64 +14,93 @@ struct Sulifly2View: View {
     
     var ref: DatabaseReference! =
     Database.database().reference()
-    
+  
     
     var body: some View {
-        VStack {
+      
+        ZStack{
             
-            HStack {
+            Image("GlassesImage")
+                .resizable()
+                .scaledToFill()
+                .opacity(1.40)
+                .ignoresSafeArea()
+            
+            
+          
+            
+            VStack {
+                
                 Spacer()
-                Text("Email")
-                TextField("Email", text: $email)
-                    .fontWeight(.bold)
-                    .frame(width: 200)
-                    .cornerRadius(10.0
-                                  
-                    )
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    .padding(.trailing)
                 
-            }
-            
-            .keyboardType(.emailAddress)
-            HStack {
+                HStack {
+                    Spacer()
+                  
+                    TextField("Email", text: $email)
+                        .fontWeight(.bold)
+                        .frame(width: 200)
+                        .cornerRadius(10.0
+                                      
+                        )
+                        .padding()
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing)
+                    
+                }
+                
+                .keyboardType(.emailAddress)
+                HStack {
+                    Spacer()
+                    SecureField("Pasword", text: $password)
+                    
+                        .fontWeight(.bold)
+                        .frame(width: 200)
+                        .cornerRadius(10.0)
+                        .padding()
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing)
+                    
+                }
+                 
                 Spacer()
-                Text("Password")
-                SecureField("Pasword", text: $password)
                 
-                    .fontWeight(.bold)
-                    .frame(width: 200)
-                    .cornerRadius(10.0)
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    .padding(.trailing)
+                Button(action: {
+                    enteruser()
+                }, label: {
+                    Text("Let's go!!")
+                        .fontWeight(.bold)
+                    
+                        .foregroundColor(Color.blue)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 100.0)
+                })
                 
-            }
-            
-            Button(action: {
-                enteruser()
-            }, label: {
-                Text("Let's go!!")
-                    .fontWeight(.bold)
+                .alert("Oops Wrong Email", isPresented: $showAlerting) {
+                    Button("OK", role: .cancel) { }
+                }
                 
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 100.0)
-            })
-            
-            .alert("Oops Wrong Email", isPresented: $showAlerting) {
-                Button("OK", role: .cancel) { }
             }
             
         }
-        
-        .onAppear(){
-            var  handle = Auth.auth().addStateDidChangeListener { auth, user in
+            
+            
+            
+            
+            
+            .onAppear(){
+                var  handle = Auth.auth().addStateDidChangeListener { auth, user in
+                    
+                }
                 
-            }
+                
+            
+            
+            
+            
+            
+            
             
             
         }
